@@ -17,6 +17,6 @@ https://prasanth-malla.github.io/prasanth-portfolio/
 2. Open `index.html` in a browser.
 
 ## Contact
-- Email: mailto:mallaprasanth1234@gmail.com
+- Email: mallaprasanth1234@gmail.com
 - LinkedIn: https://www.linkedin.com/in/prasanthmalla-softwareengineer/
 - GitHub: https://github.com/Prasanth-malla
