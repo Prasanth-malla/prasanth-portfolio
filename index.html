@@ -7,24 +7,39 @@
     <style>
         /* Reset and General Styles */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
-        a { color: #2980b9; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; background: #f5f6fa; scroll-behavior: smooth; }
+        a { color: #1e90ff; text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #ff6347; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
 
         /* Header */
-        header { background: #2c3e50; color: white; text-align: center; padding: 2rem; }
-        header h1 { font-size: 2.5rem; }
-        header p { font-size: 1.2rem; margin-top: 0.5rem; }
+        header { background: linear-gradient(135deg, #2c3e50, #34495e); color: white; text-align: center; padding: 3rem 1rem; }
+        header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.3rem; opacity: 0.9; }
+
+        /* Navigation */
+        nav { position: sticky; top: 0; background: #2c3e50; padding: 1rem; text-align: center; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav a { color: white; margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #1e90ff; }
 
         /* Sections */
-        section { margin: 2rem 0; background: white; padding: 1.5rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        section { margin: 2rem 0; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        section:hover { transform: translateY(-5px); }
+        h2 { color: #2c3e50; font-size: 1.8rem; border-bottom: 2px solid #1e90ff; padding-bottom: 0.5rem; margin-bottom: 1rem; }
         ul { list-style-type: disc; margin-left: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .grid div { background: #f9f9f9; padding: 1rem; border-radius: 5px; }
 
         /* Footer */
-        footer { text-align: center; padding: 1rem; background: #2c3e50; color: white; margin-top: 2rem; }
+        footer { text-align: center; padding: 1.5rem; background: #2c3e50; color: white; margin-top: 3rem; font-size: 0.9rem; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            nav a { display: block; margin: 10px 0; }
+            .container { padding: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -33,6 +48,17 @@
         <p>Software Engineer | B.Tech Graduate | Problem Solver</p>
     </header>
 
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#personal">Personal</a>
+    </nav>
+
     <div class="container">
         <!-- Contact Info -->
         <section id="contact">
@@ -40,24 +66,24 @@
             <p><strong>Mobile:</strong> +91 78939 13302</p>
             <p><strong>Email:</strong> <a href="mailto:mallaprasanth1234@gmail.com">mallaprasanth1234@gmail.com</a></p>
             <p><strong>Address:</strong> 12-4-4/27, R.T.C Complex, Anakapalli, 531001</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/">Profile</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla">Prasanth-malla</a></p>
-            <p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07">cse_l07</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">prasanthmalla-softwareengineer</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">Prasanth-malla</a></p>
+            <p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">cse_l07</a></p>
         </section>
 
         <!-- Career Objective -->
         <section id="objective">
             <h2>Career Objective</h2>
-            <p>Highly motivated and adaptable graduate with a Bachelor of Technology degree from ANITS. Eager to launch a successful career in the software field and contribute my strong academic foundation, enthusiasm, and willingness to learn. Possess excellent communication skills, a strong work ethic, and a commitment to achieving goals. Proven ability to work collaboratively in team environments and a strong aptitude for problem-solving. Looking for an opportunity to leverage my skills and contribute to the success of a dynamic organization.</p>
+            <p>Motivated B.Tech graduate from ANITS eager to excel in the software industry, leveraging a strong academic background, technical skills, and a collaborative mindset to drive innovation and success.</p>
         </section>
 
         <!-- Education -->
         <section id="education">
             <h2>Education</h2>
             <ul>
-                <li><strong>B.Tech - Computer Science and Engineering</strong><br>Anil Neerukonda Institute of Technology and Sciences (2020-2023)<br>CGPA: 8.2</li>
-                <li><strong>Diploma - Computer Engineering</strong><br>Govt. Polytechnic Anakapalli (2017-2020)<br>Percentage: 92%</li>
-                <li><strong>Class X - SSC Regular</strong><br>G.V.M.C High School, Anakapalli (2016-2017)<br>GPA: 8.8</li>
+                <li><strong>B.Tech, Computer Science and Engineering</strong><br>Anil Neerukonda Institute of Technology and Sciences (2020-2023)<br>CGPA: 8.2</li>
+                <li><strong>Diploma, Computer Engineering</strong><br>Govt. Polytechnic Anakapalli (2017-2020)<br>Percentage: 92%</li>
+                <li><strong>Class X, SSC Regular</strong><br>G.V.M.C High School, Anakapalli (2016-2017)<br>GPA: 8.8</li>
             </ul>
         </section>
 
@@ -65,18 +91,18 @@
         <section id="skills">
             <h2>Skills</h2>
             <p><strong>Programming Languages:</strong> C, Python, Java</p>
-            <p><strong>Database:</strong> MySQL, Google Firebase</p>
-            <p><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js , Express.js </p>
-            <p><strong>Others:</strong> Operating Systems, Networking, Data Structures & Algorithms, Competitive Programming</p>
+            <p><strong>Databases:</strong> MySQL, Google Firebase</p>
+            <p><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js, Express.js</p>
+            <p><strong>Additional Skills:</strong> Operating Systems, Networking, Data Structures & Algorithms, Competitive Programming</p>
         </section>
 
         <!-- Achievements -->
         <section id="achievements">
             <h2>Achievements</h2>
             <ul>
-                <li>1st Prize in District Level Chess Competition</li>
-                <li>Completed National Cadets Corps (NCC) 'A' Certification</li>
-                <li>2nd Prize in District Level Cricket Tournament</li>
+                <li>5-Star Badges in Python and Problem Solving – HackerRank</li>
+                <li>Participant, NASSCOM Hackathon Competition</li>
+                <li>NCC 'A' Certification – National Cadets Corps</li>
             </ul>
         </section>
 
@@ -85,10 +111,10 @@
             <h2>Strengths</h2>
             <ul>
                 <li>Positive Attitude</li>
-                <li>Team Work</li>
+                <li>Team Collaboration</li>
                 <li>Time Management</li>
-                <li>Open Minded</li>
-                <li>Quick Learning</li>
+                <li>Adaptability</li>
+                <li>Quick Learner</li>
             </ul>
         </section>
 
@@ -96,10 +122,10 @@
         <section id="certificates">
             <h2>Certificates</h2>
             <ul>
-                <li>Python Coursera: University of Michigan</li>
-                <li>AWS Cloud Computing by APSSDC</li>
-                <li>Data Analytics Essentials Issued by Cisco</li>
-                <li>Career Essentials in Generative AI by Microsoft and LinkedIn</li>
+                <li>Python – Coursera (University of Michigan)</li>
+                <li>AWS Cloud Computing – APSSDC</li>
+                <li>Data Analytics Essentials – Cisco</li>
+                <li>Generative AI Career Essentials – Microsoft & LinkedIn</li>
             </ul>
         </section>
 
@@ -108,22 +134,22 @@
             <h2>Internships & Projects</h2>
             <div class="grid">
                 <div>
-                    <strong>Internship at Government Polytechnic, Anakapalli</strong><br>IT Essentials Internship by Cisco Netacad<br>Technologies: C Programming, Data Structures, Networking
+                    <strong>Internship – Government Polytechnic, Anakapalli</strong><br>IT Essentials (Cisco Netacad)<br>Tech: C, Data Structures, Networking
                 </div>
                 <div>
-                    <strong>Internship at Wyreflow Technologies, Bhopal</strong><br>Software Development Life Cycle, Software Testing Life Cycle<br>Technologies: Programming, Testing Techniques, Database, API Testing
+                    <strong>Internship – Wyreflow Technologies, Bhopal</strong><br>Software Dev & Testing<br>Skills: SDLC, STLC, API Testing
                 </div>
                 <div>
-                    <strong>Quick Aid Android App</strong><br>Technologies: Java, Android Studio<br>Designed to provide first aid information and emergency assistance
+                    <strong>Internship – InLight Tech, Bengaluru</strong><br>Web Development<br>Tech: React.js, Node.js, RESTful APIs
                 </div>
                 <div>
-                    <strong>Plant Leaf Disease Detection</strong><br>Technologies: Python, Google Colab<br>For detecting diseases of plant leaves based on images
+                    <strong>Quick Aid Android App</strong><br>Tech: Java, Android Studio<br>First aid and emergency assistance tool
                 </div>
                 <div>
-                    <strong>Agri-Invest Android App</strong><br>Technologies: Java, Android Studio<br>Interface for investors to invest in agriculture
+                    <strong>Plant Leaf Disease Detection</strong><br>Tech: Python, Google Colab<br>Image-based plant disease detection
                 </div>
                 <div>
-                    <strong>Techobite Construction Website</strong><br>Technologies: JavaScript, Bootstrap<br>Platform for creating and managing professional websites
+                    <strong>Techobite Construction Website</strong><br>Tech: JavaScript, Bootstrap<br>Business website management platform
                 </div>
             </div>
         </section>
@@ -132,16 +158,16 @@
         <section id="personal">
             <h2>Personal Details</h2>
             <p><strong>Father's Name:</strong> M. Sanyasi Naidu</p>
-            <p><strong>DOB:</strong> 9th November, 2001</p>
-            <p><strong>Languages Known:</strong> English, Telugu</p>
-            <p><strong>Hobbies:</strong> Practice Coding, Playing Chess & Cricket, Watching Movies</p>
+            <p><strong>Date of Birth:</strong> November 9, 2001</p>
+            <p><strong>Languages:</strong> English, Telugu</p>
+            <p><strong>Hobbies:</strong> Coding Challenges, Chess, Cricket, Movies</p>
         </section>
 
         <!-- Declaration -->
         <section id="declaration">
             <h2>Declaration</h2>
-            <p>I hereby declare that the above details are correct and true to the best of my knowledge. I bear the responsibility for the correctness of the above-mentioned particulars.</p>
-            <p style="text-align: right; margin-top: 1rem;"><em>Malla Prasanth</em></p>
+            <p>I certify that the information provided is accurate and true to the best of my knowledge.</p>
+            <p style="text-align: right; margin-top: 1rem; font-style: italic;">Malla Prasanth</p>
         </section>
     </div>
 
