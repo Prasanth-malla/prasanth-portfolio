@@ -10,78 +10,93 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f5f6fa;
-    scroll-behavior: smooth;
+    background: #f4f7fb;
+    color: #333;
 }
 
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
     color: white;
     text-align: center;
     padding: 3rem 1rem;
 }
 
-header h1 { font-size: 2.5rem; }
+header h1 { font-size: 2.8rem; }
 header p { font-size: 1.2rem; }
 
+/* NAVBAR */
 nav {
     position: sticky;
     top: 0;
-    background: #2c3e50;
+    background: #222;
     padding: 1rem;
     text-align: center;
     z-index: 1000;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     margin: 0 12px;
     font-weight: 500;
 }
 
-nav a:hover { color: #1e90ff; }
+nav a:hover { color: #00d4ff; }
 
+/* CONTAINER */
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
+/* SECTION CARD */
 section {
-    background: white;
+    background: #fff;
     margin: 2rem 0;
     padding: 2rem;
-    border-radius: 8px;
-
-    /* 🔥 FIX FOR NAV OVERLAP */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     scroll-margin-top: 100px;
 }
 
 h2 {
-    border-bottom: 2px solid #1e90ff;
+    color: #1f4037;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    border-left: 5px solid #00d4ff;
+    padding-left: 10px;
 }
 
 ul { margin-left: 20px; }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+li { margin-bottom: 8px; }
+
+/* PROJECT LIST */
+.projects li {
+    margin-bottom: 1.5rem;
 }
 
-.grid div {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 6px;
+/* LINKS */
+a {
+    color: #0077cc;
+    text-decoration: none;
 }
+a:hover { text-decoration: underline; }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #2c3e50;
+    background: #222;
     color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
 }
 </style>
 </head>
@@ -99,9 +114,10 @@ footer {
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#achievements">Achievements</a>
+    <a href="#strengths">Strengths</a>
     <a href="#certifications">Certificates</a>
     <a href="#projects">Projects</a>
-    <a href="#personal">Personal</a>
+    <a href="#personal">Profiles</a>
 </nav>
 
 <div class="container">
@@ -110,11 +126,7 @@ footer {
 <h2>Contact Information</h2>
 <p><strong>Mobile:</strong> +91 78939 13302</p>
 <p><strong>Email:</strong> mallaprasanth1234@gmail.com</p>
-<p><strong>Address:</strong> 12-4-4/27, R.T.C Complex, Anakapalli, India - 531001</p>
-
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">Profile</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">Profile</a></p>
-<p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">Profile</a></p>
+<p><strong>Address:</strong> Anakapalli, India - 531001</p>
 </section>
 
 <section id="summary">
@@ -130,27 +142,33 @@ and efficient software systems.
 <section id="education">
 <h2>Education</h2>
 <ul>
-<li><strong>B.Tech – ANITS (2020–2023)</strong><br>Computer Science and Engineering<br>CGPA: 8.2</li>
-<li><strong>Diploma – Government Polytechnic College, Anakapalli (2017–2020)</strong><br>Computer Engineering<br>Percentage: 92%</li>
-<li><strong>Class X – G.V.M.C High School (2016–2017)</strong><br>SSC Regular<br>GPA: 8.8</li>
+<li><strong>B.Tech – ANITS (2020–2023)</strong><br>Computer Science and Engineering | CGPA: 8.2</li>
+<li><strong>Diploma – Govt Polytechnic, Anakapalli (2017–2020)</strong><br>Percentage: 92%</li>
+<li><strong>SSC – G.V.M.C High School (2016–2017)</strong><br>GPA: 8.8</li>
 </ul>
 </section>
 
 <section id="skills">
 <h2>Technical Skills</h2>
 <p><strong>Programming:</strong> C, Python, Java</p>
-<p><strong>Databases:</strong> MySQL, Google Firebase</p>
-<p><strong>Web:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js, Express.js</p>
-<p><strong>Core Concepts:</strong> Operating Systems, Networking, Data Structures & Algorithms, Competitive Programming</p>
+<p><strong>Databases:</strong> MySQL, Firebase</p>
+<p><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js, Express.js</p>
+<p><strong>Core Concepts:</strong> Operating Systems, Networking, Data Structures & Algorithms</p>
 <p><strong>Tools:</strong> Git, Streamlit</p>
 </section>
 
 <section id="achievements">
-<h2>Achievements & Strengths</h2>
+<h2>Achievements</h2>
 <ul>
 <li>Participated in NASSCOM Hackathon Competition</li>
-<li>Completed National Cadets Corps (NCC) 'A' Certification</li>
-<li>Earned 5-star rating badges in Python and Problem Solving on HackerRank</li>
+<li>Completed NCC 'A' Certification</li>
+<li>5-Star HackerRank in Python & Problem Solving</li>
+</ul>
+</section>
+
+<section id="strengths">
+<h2>Strengths</h2>
+<ul>
 <li>Positive attitude</li>
 <li>Team work</li>
 <li>Time management</li>
@@ -162,69 +180,85 @@ and efficient software systems.
 <section id="certifications">
 <h2>Certifications</h2>
 <ul>
-<li>Python – Coursera (University of Michigan)</li>
+<li>Python – University of Michigan (Coursera)</li>
 <li>AWS Cloud Computing – APSSDC</li>
 <li>Data Analytics Essentials – Cisco</li>
-<li>Career Essentials in Generative AI – Microsoft & LinkedIn</li>
+<li>Generative AI – Microsoft & LinkedIn</li>
 </ul>
 </section>
 
-<section id="projects">
+<section id="projects" class="projects">
 <h2>Experience & Projects</h2>
 
-<div class="grid">
+<ul>
 
-<div>
-<strong>System Engineer Intern – HP India Sales Pvt. Ltd.</strong><br>
-Diagnosed and resolved hardware/software issues in laptops, desktops, and printers.
-Performed installation, configuration, and maintenance.
-</div>
+<li>
+<strong>System Engineer Intern, HP India Sales Pvt. Ltd., Visakhapatnam</strong>
+<ul>
+<li>Diagnosed and resolved hardware and software issues.</li>
+<li>Performed installation, configuration, and maintenance.</li>
+<li>Reduced downtime through efficient troubleshooting.</li>
+</ul>
+</li>
 
-<div>
-<strong>Internship – InLighn Tech</strong><br>
-Designed dynamic web apps with REST APIs and improved performance.
-</div>
+<li>
+<strong>Internship at InLighn Tech, Bengaluru</strong>
+<ul>
+<li>Developed dynamic web applications with REST APIs.</li>
+<li>Improved UI/UX and system performance.</li>
+</ul>
+</li>
 
-<div>
-<strong>Internship – Wyreflow Technologies</strong><br>
-Worked on SDLC, STLC, API Testing and databases.
-</div>
+<li>
+<strong>Internship at Wyreflow Technologies, Bhopal</strong>
+<ul>
+<li>Worked on SDLC and STLC processes.</li>
+<li>Performed API testing and database operations.</li>
+</ul>
+</li>
 
-<div>
-<strong>AI Chatbot (NLP)</strong><br>
-Built using TF-IDF, Logistic Regression and Streamlit.
-Provides real-time responses.
-</div>
+<li>
+<strong>AI Chatbot using NLP</strong>
+<ul>
+<li>Built chatbot using TF-IDF, Logistic Regression, Streamlit.</li>
+<li>Provides real-time responses using text and voice.</li>
+</ul>
+</li>
 
-<div>
-<strong>Disease Prediction System</strong><br>
-Developed using Python, Pandas, NumPy, Scikit-learn and Streamlit.
-</div>
+<li>
+<strong>Disease Prediction System</strong>
+<ul>
+<li>Developed using Python, Pandas, NumPy, Scikit-learn.</li>
+<li>Predicts diseases based on symptoms.</li>
+</ul>
+</li>
 
-<div>
-<strong>Phishing URL Detection</strong><br>
-Detects malicious URLs using machine learning techniques.
-</div>
+<li>
+<strong>Phishing URL Detection System</strong>
+<ul>
+<li>Built ML model to detect malicious URLs.</li>
+<li>Classifies URLs as safe or phishing in real-time.</li>
+</ul>
+</li>
 
-</div>
+</ul>
+
 </section>
 
 <section id="personal">
-<h2>Personal Details & Profiles</h2>
-<p><strong>Date of Birth:</strong> 9 November 2001</p>
+<h2>Profiles & Personal Details</h2>
+<p><strong>DOB:</strong> 9 November 2001</p>
 <p><strong>Languages:</strong> English, Telugu</p>
 <p><strong>Hobbies:</strong> Coding, Chess, Cricket, Movies</p>
 
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">Profile</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">Profile</a></p>
-<p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">Profile</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">View Profile</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">View Profile</a></p>
+<p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">View Profile</a></p>
 </section>
 
 <section id="declaration">
 <h2>Declaration</h2>
-<p>
-I hereby declare that the above details are correct and true to the best of my knowledge.
-</p>
+<p>I hereby declare that the above details are true to the best of my knowledge.</p>
 <p style="text-align:right;"><strong>(MALLA PRASANTH)</strong></p>
 </section>
 
