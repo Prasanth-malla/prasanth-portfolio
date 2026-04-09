@@ -35,9 +35,13 @@ My personal portfolio showcasing my skills, projects, and achievements as a **Sy
 📬 Contact
 
 📧 Email: mallaprasanth1234@gmail.com
+
 💼 LinkedIn: https://www.linkedin.com/in/prasanthmalla-softwareengineer/
+
 💻 GitHub: https://github.com/Prasanth-malla
+
 🧠 HackerRank: https://www.hackerrank.com/profile/cse_l07 
+
 
 📌 About Me
 
