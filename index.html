@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malla Prasanth - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malla Prasanth - Portfolio</title>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; background: #f5f6fa; scroll-behavior: smooth; }
-        a { color: #1e90ff; text-decoration: none; }
-        a:hover { color: #ff6347; }
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    scroll-behavior: smooth;
+}
 
-        header {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-        }
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
 
-        header h1 { font-size: 2.5rem; }
-        header p { font-size: 1.2rem; }
+header h1 { font-size: 2.5rem; }
+header p { font-size: 1.2rem; }
 
-        nav {
-            position: sticky;
-            top: 0;
-            background: #2c3e50;
-            padding: 1rem;
-            text-align: center;
-        }
+nav {
+    position: sticky;
+    top: 0;
+    background: #2c3e50;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
 
-        nav a {
-            color: white;
-            margin: 0 10px;
-        }
+nav a {
+    color: white;
+    margin: 0 12px;
+    font-weight: 500;
+}
 
-        section {
-            margin: 2rem 0;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-        }
+nav a:hover { color: #1e90ff; }
 
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #1e90ff;
-            margin-bottom: 1rem;
-        }
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
 
-        ul { margin-left: 20px; }
+section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-        }
+    /* 🔥 FIX FOR NAV OVERLAP */
+    scroll-margin-top: 100px;
+}
 
-        .grid div {
-            background: #f9f9f9;
-            padding: 1rem;
-            border-radius: 5px;
-        }
+h2 {
+    border-bottom: 2px solid #1e90ff;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #2c3e50;
-            color: white;
-        }
-    </style>
+ul { margin-left: 20px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.grid div {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: white;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Malla Prasanth</h1>
+    <h1>MALLA PRASANTH</h1>
     <p>System Engineer | B.Tech Graduate | Problem Solver</p>
 </header>
 
@@ -85,6 +99,7 @@
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certificates</a>
     <a href="#projects">Projects</a>
     <a href="#personal">Personal</a>
 </nav>
@@ -92,109 +107,131 @@
 <div class="container">
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Mobile:</strong> +91 78939 13302</p>
-    <p><strong>Email:</strong> mallaprasanth1234@gmail.com</p>
-    <p><strong>Address:</strong> Anakapalli, India - 531001</p>
+<h2>Contact Information</h2>
+<p><strong>Mobile:</strong> +91 78939 13302</p>
+<p><strong>Email:</strong> mallaprasanth1234@gmail.com</p>
+<p><strong>Address:</strong> 12-4-4/27, R.T.C Complex, Anakapalli, India - 531001</p>
+
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">Profile</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">Profile</a></p>
+<p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">Profile</a></p>
 </section>
 
 <section id="summary">
-    <h2>Professional Summary</h2>
-    <p>
-        Computer Science graduate with strong skills in Python, Java, and full-stack web development.
-        Experienced in building AI/ML-based applications including chatbots, disease prediction systems,
-        and cybersecurity solutions. Strong problem-solving abilities with a passion for developing
-        scalable and efficient software systems.
-    </p>
+<h2>Professional Summary</h2>
+<p>
+Computer Science graduate with strong skills in Python, Java, and full-stack web development.
+Experienced in building AI/ML-based applications including chatbots, disease prediction systems,
+and cybersecurity solutions. Strong problem-solving abilities with a passion for developing scalable
+and efficient software systems.
+</p>
 </section>
 
 <section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li><strong>B.Tech – ANITS (2020–2023)</strong><br>Computer Science and Engineering<br>CGPA: 8.2</li>
-        <li><strong>Diploma – Govt Polytechnic, Anakapalli (2017–2020)</strong><br>Percentage: 92%</li>
-        <li><strong>Class X – G.V.M.C High School (2016–2017)</strong><br>GPA: 8.8</li>
-    </ul>
+<h2>Education</h2>
+<ul>
+<li><strong>B.Tech – ANITS (2020–2023)</strong><br>Computer Science and Engineering<br>CGPA: 8.2</li>
+<li><strong>Diploma – Government Polytechnic College, Anakapalli (2017–2020)</strong><br>Computer Engineering<br>Percentage: 92%</li>
+<li><strong>Class X – G.V.M.C High School (2016–2017)</strong><br>SSC Regular<br>GPA: 8.8</li>
+</ul>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> C, Python, Java</p>
-    <p><strong>Databases:</strong> MySQL, Firebase</p>
-    <p><strong>Web:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js, Express.js</p>
-    <p><strong>Core:</strong> OS, Networking, DSA, Competitive Programming</p>
-    <p><strong>Tools:</strong> Git, Streamlit</p>
+<h2>Technical Skills</h2>
+<p><strong>Programming:</strong> C, Python, Java</p>
+<p><strong>Databases:</strong> MySQL, Google Firebase</p>
+<p><strong>Web:</strong> HTML, CSS, JavaScript, PHP, React.js, Node.js, Express.js</p>
+<p><strong>Core Concepts:</strong> Operating Systems, Networking, Data Structures & Algorithms, Competitive Programming</p>
+<p><strong>Tools:</strong> Git, Streamlit</p>
 </section>
 
 <section id="achievements">
-    <h2>Achievements & Strengths</h2>
-    <ul>
-        <li>5-Star HackerRank in Python & Problem Solving</li>
-        <li>NASSCOM Hackathon Participant</li>
-        <li>NCC 'A' Certification</li>
-        <li>Positive attitude & quick learner</li>
-        <li>Strong teamwork & time management</li>
-    </ul>
+<h2>Achievements & Strengths</h2>
+<ul>
+<li>Participated in NASSCOM Hackathon Competition</li>
+<li>Completed National Cadets Corps (NCC) 'A' Certification</li>
+<li>Earned 5-star rating badges in Python and Problem Solving on HackerRank</li>
+<li>Positive attitude</li>
+<li>Team work</li>
+<li>Time management</li>
+<li>Open minded</li>
+<li>Quick learner</li>
+</ul>
+</section>
+
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>Python – Coursera (University of Michigan)</li>
+<li>AWS Cloud Computing – APSSDC</li>
+<li>Data Analytics Essentials – Cisco</li>
+<li>Career Essentials in Generative AI – Microsoft & LinkedIn</li>
+</ul>
 </section>
 
 <section id="projects">
-    <h2>Experience & Projects</h2>
+<h2>Experience & Projects</h2>
 
-    <div class="grid">
+<div class="grid">
 
-        <div>
-            <strong>System Engineer Intern – HP India</strong><br>
-            Diagnosed and resolved hardware/software issues.
-            Reduced downtime through efficient troubleshooting.
-        </div>
+<div>
+<strong>System Engineer Intern – HP India Sales Pvt. Ltd.</strong><br>
+Diagnosed and resolved hardware/software issues in laptops, desktops, and printers.
+Performed installation, configuration, and maintenance.
+</div>
 
-        <div>
-            <strong>Intern – InLighn Tech</strong><br>
-            Built dynamic web apps with REST APIs and improved performance.
-        </div>
+<div>
+<strong>Internship – InLighn Tech</strong><br>
+Designed dynamic web apps with REST APIs and improved performance.
+</div>
 
-        <div>
-            <strong>Intern – Wyreflow Technologies</strong><br>
-            Worked on SDLC, STLC, API testing and database systems.
-        </div>
+<div>
+<strong>Internship – Wyreflow Technologies</strong><br>
+Worked on SDLC, STLC, API Testing and databases.
+</div>
 
-        <div>
-            <strong>AI Chatbot</strong><br>
-            Built NLP chatbot using TF-IDF, Logistic Regression & Streamlit.
-        </div>
+<div>
+<strong>AI Chatbot (NLP)</strong><br>
+Built using TF-IDF, Logistic Regression and Streamlit.
+Provides real-time responses.
+</div>
 
-        <div>
-            <strong>Disease Prediction System</strong><br>
-            ML-based system using Python, Pandas & Scikit-learn.
-        </div>
+<div>
+<strong>Disease Prediction System</strong><br>
+Developed using Python, Pandas, NumPy, Scikit-learn and Streamlit.
+</div>
 
-        <div>
-            <strong>Phishing URL Detection</strong><br>
-            Detects malicious URLs using machine learning.
-        </div>
+<div>
+<strong>Phishing URL Detection</strong><br>
+Detects malicious URLs using machine learning techniques.
+</div>
 
-    </div>
+</div>
 </section>
 
 <section id="personal">
-    <h2>Personal Details</h2>
-    <p><strong>DOB:</strong> 9 Nov 2001</p>
-    <p><strong>Languages:</strong> English, Telugu</p>
-    <p><strong>Hobbies:</strong> Coding, Chess, Cricket, Movies</p>
-    <p><strong>GitHub:</strong> github.com/Prasanth-malla</p>
-    <p><strong>LinkedIn:</strong> linkedin.com/in/prasanthmalla-softwareengineer</p>
+<h2>Personal Details & Profiles</h2>
+<p><strong>Date of Birth:</strong> 9 November 2001</p>
+<p><strong>Languages:</strong> English, Telugu</p>
+<p><strong>Hobbies:</strong> Coding, Chess, Cricket, Movies</p>
+
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasanthmalla-softwareengineer/" target="_blank">Profile</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/Prasanth-malla" target="_blank">Profile</a></p>
+<p><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/cse_l07" target="_blank">Profile</a></p>
 </section>
 
 <section id="declaration">
-    <h2>Declaration</h2>
-    <p>I declare that the above information is true to the best of my knowledge.</p>
-    <p style="text-align:right;"><strong>Malla Prasanth</strong></p>
+<h2>Declaration</h2>
+<p>
+I hereby declare that the above details are correct and true to the best of my knowledge.
+</p>
+<p style="text-align:right;"><strong>(MALLA PRASANTH)</strong></p>
 </section>
 
 </div>
 
 <footer>
-    <p>© 2026 Malla Prasanth</p>
+<p>© 2026 Malla Prasanth</p>
 </footer>
 
 </body>
